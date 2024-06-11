@@ -9,7 +9,7 @@ fn is_only_latin_alphabetic(s: &str) -> bool {
 }
 
 #[derive(Debug, Eq, PartialEq)]
-pub struct ChunkType([u8; 4]);
+pub struct ChunkType(pub [u8; 4]);
 
 impl TryFrom<[u8; 4]> for ChunkType {
     type Error = ();
